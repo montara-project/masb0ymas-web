@@ -25,29 +25,24 @@ export function FeaturedProjects() {
       <div className="mt-10 grid gap-4 sm:grid-cols-2">
         {FEATURED_PROJECTS.map((project, index) => (
           <Reveal key={project.title} delay={index * 60} className="h-full">
-            <article className={`${cardClass} flex h-full flex-col p-6`}>
-              <h3 className="text-lg font-bold">
-                <a
-                  href={project.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group inline-flex items-center gap-1.5 transition-colors hover:text-accent-strong"
-                >
+            <article className={`${cardClass} flex h-full flex-col`}>
+              <a href={project.href} className="group flex h-full flex-col p-6">
+                <h3 className="inline-flex items-center gap-1.5 text-lg font-bold transition-colors group-hover:text-accent-strong">
                   {project.title}
                   <ArrowUpRight
                     className="h-4 w-4 text-muted-foreground transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent-strong"
                     aria-hidden="true"
                   />
-                </a>
-              </h3>
-              <p className="mt-3 line-clamp-4 text-sm leading-6 text-muted-foreground">
-                {project.description}
-              </p>
-              <div className="mt-auto flex flex-wrap gap-2 pt-4">
-                {project.tags.map((tag) => (
-                  <TagChip key={tag}>{tag}</TagChip>
-                ))}
-              </div>
+                </h3>
+                <p className="mt-3 line-clamp-4 text-sm leading-6 text-muted-foreground">
+                  {project.description}
+                </p>
+                <span className="mt-auto flex flex-wrap gap-2 pt-4">
+                  {project.tags.map((tag) => (
+                    <TagChip key={tag}>{tag}</TagChip>
+                  ))}
+                </span>
+              </a>
             </article>
           </Reveal>
         ))}

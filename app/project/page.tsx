@@ -32,8 +32,6 @@ export default function ProjectPage() {
             <article className={`${cardClass} flex h-full flex-col overflow-hidden`}>
               <a
                 href={projectUrl(project.slug)}
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label={project.title}
                 className="relative block aspect-video overflow-hidden border-b border-border"
               >
@@ -49,8 +47,6 @@ export default function ProjectPage() {
                 <h2 className="text-lg font-bold">
                   <a
                     href={projectUrl(project.slug)}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="group inline-flex items-center gap-1.5 transition-colors hover:text-accent-strong"
                   >
                     {project.title}

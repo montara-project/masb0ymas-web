@@ -6,7 +6,7 @@ import { SITE } from '@/lib/site-data'
 
 export function Hero() {
   return (
-    <section className="mx-auto w-full max-w-5xl px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-24">
+    <section className="mx-auto w-full max-w-7xl px-4 pb-16 pt-16 sm:px-6 sm:pb-20 sm:pt-24">
       <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-8">
         <Reveal>
           <div className="flex flex-col gap-6">
@@ -43,10 +43,10 @@ export function Hero() {
 
         <Reveal delay={120}>
           <div className="flex flex-col items-center gap-10">
-            <div className="group relative w-56 sm:w-64">
+            <div className="relative w-56 sm:w-64">
               <div
                 aria-hidden="true"
-                className="absolute inset-0 mx-auto -rotate-[5deg] scale-x-95 rounded-lg bg-gradient-to-br from-info/40 to-info/10 transition-transform duration-300 group-hover:rotate-[3deg]"
+                className="absolute inset-0 mx-auto -rotate-[5deg] scale-x-95 rounded-lg bg-gradient-to-br from-info/40 to-info/10"
               />
               <Image
                 src="/images/profile.jpeg"

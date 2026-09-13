@@ -5,7 +5,7 @@ import { SITE } from '@/lib/site-data'
 export function SiteFooter() {
   return (
     <footer className="border-t border-border/60">
-      <div className="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:px-6">
+      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:px-6">
         <p>
           Copyright © {new Date().getFullYear()} {SITE.name}. All rights reserved.
         </p>

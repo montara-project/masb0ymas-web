@@ -47,7 +47,7 @@ export function PageShell({ children }: { children: ReactNode }) {
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-24 left-[8%] -z-10 h-64 w-64 rounded-full bg-accent/10 blur-3xl"
       />
-      <div className="mx-auto w-full max-w-5xl px-4 pb-20 sm:px-6">{children}</div>
+      <div className="mx-auto w-full max-w-7xl px-4 pb-20 sm:px-6">{children}</div>
     </div>
   )
 }

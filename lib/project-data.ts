@@ -75,5 +75,5 @@ export const PROJECTS: Project[] = [
 ]
 
 export function projectUrl(slug: string) {
-  return `https://masb0ymas.com/project/${slug}`
+  return `/project/${slug}`
 }

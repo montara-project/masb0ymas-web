@@ -35,7 +35,7 @@ export function HireCta() {
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <a
                 href={`mailto:${SITE.email}`}
-                className="inline-flex cursor-pointer items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground shadow-[0_8px_24px_rgba(243,91,4,0.35)] transition-all hover:-translate-y-0.5 hover:bg-accent-strong hover:shadow-[0_10px_28px_rgba(255,183,3,0.45)]"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground transition-colors duration-300 hover:bg-accent/80"
               >
                 Contact me
               </a>
@@ -43,7 +43,7 @@ export function HireCta() {
                 href={SITE.contactUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border-strong bg-background/40 px-6 py-3 text-sm font-bold text-foreground transition-all hover:-translate-y-0.5 hover:border-info-soft hover:text-info-soft"
+                className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border-strong bg-background/40 px-6 py-3 text-sm font-bold text-foreground transition-colors duration-300 hover:bg-accent/50"
               >
                 Other channels
               </a>

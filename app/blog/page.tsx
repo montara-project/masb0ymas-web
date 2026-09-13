@@ -31,8 +31,6 @@ export default function BlogPage() {
             <article className={`${cardClass} flex flex-col overflow-hidden sm:flex-row`}>
               <a
                 href={blogPostUrl(post.slug)}
-                target="_blank"
-                rel="noopener noreferrer"
                 aria-label={post.title}
                 className="relative block aspect-[16/9] overflow-hidden border-b border-border sm:aspect-auto sm:w-56 sm:shrink-0 sm:border-b-0 sm:border-r"
               >
@@ -54,8 +52,6 @@ export default function BlogPage() {
                 <h2 className="mt-2 text-lg font-bold leading-snug">
                   <a
                     href={blogPostUrl(post.slug)}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="transition-colors hover:text-accent-strong"
                   >
                     {post.title}

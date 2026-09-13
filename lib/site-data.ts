@@ -27,7 +27,7 @@ export const NAV_LINKS = [
   { label: 'Home', href: '/' },
   { label: 'Blog', href: '/blog' },
   { label: 'Project', href: '/project' },
-  { label: 'About', href: 'https://masb0ymas.com/about' },
+  { label: 'About', href: '/about' },
   { label: 'Contact', href: SITE.contactUrl },
 ] as const
 
@@ -73,7 +73,7 @@ export const SERVICES = [
 export const FEATURED_POSTS = [
   {
     title: 'Bagaimana cara setup Git dan GitHub pada local device',
-    href: 'https://masb0ymas.com/blog/bagaimana-cara-setup-git-dan-github-pada-local-device',
+    href: '/blog/bagaimana-cara-setup-git-dan-github-pada-local-device',
     cover: '/blog/setup-git-github.png',
     coverAlt: 'Illustration of Git and GitHub setup on a local device',
     date: '02 Des 2025',
@@ -84,7 +84,7 @@ export const FEATURED_POSTS = [
   },
   {
     title: 'How to Use GitHub Actions for CI/CD and Push to Google Artifact Registry',
-    href: 'https://masb0ymas.com/blog/how-to-use-github-action-for-ci-cd-and-push-to-google-artifact-registry',
+    href: '/blog/how-to-use-github-action-for-ci-cd-and-push-to-google-artifact-registry',
     cover: '/blog/ci-cd-github-actions.webp',
     coverAlt: 'GitHub Actions workflow build success on Google Artifact Registry',
     date: '04 Nov 2024',
@@ -98,28 +98,28 @@ export const FEATURED_POSTS = [
 export const FEATURED_PROJECTS = [
   {
     title: 'Seadev',
-    href: 'https://masb0ymas.com/project/seadev',
+    href: '/project/seadev',
     description:
       'Cost-effective engineering talent to help your startup thrive. Skilled developers provide high-quality, affordable technical solutions tailored to emerging businesses.',
     tags: ['Engineering', 'Talent', 'Startup'],
   },
   {
     title: 'Boatwork',
-    href: 'https://masb0ymas.com/project/boatwork',
+    href: '/project/boatwork',
     description:
       'Professional boat and yacht services specializing in comprehensive repairs, state-of-the-art audio system enhancements, custom modifications, and routine maintenance.',
     tags: ['Yacht', 'Boat', 'Audio'],
   },
   {
     title: 'Moneyflow ID',
-    href: 'https://masb0ymas.com/project/moneyflow-id',
+    href: '/project/moneyflow-id',
     description:
       'A comprehensive web application designed to help you take control of your financial life by tracking and managing your cash flow effectively, from income and expenses to budgets and savings goals.',
     tags: ['Cashflow', 'Income', 'Expense', 'Budgeting'],
   },
   {
     title: 'Web Programming Hack',
-    href: 'https://masb0ymas.com/project/web-programming-hack',
+    href: '/project/web-programming-hack',
     description:
       'A bootcamp for web programming that also offers an opportunity to work abroad. Our intensive training program equips participants with essential coding skills, modern frameworks, and best practices for full-stack development.',
     tags: ['Bootcamp', 'Web Programming'],

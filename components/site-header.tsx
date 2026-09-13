@@ -19,7 +19,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
+      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
         <a
           href="/"
           className="text-lg font-extrabold tracking-tight transition-colors hover:text-accent-strong"
@@ -39,7 +39,7 @@ export function SiteHeader() {
           ))}
           <a
             href={SITE.contactUrl}
-            className="ml-2 cursor-pointer rounded-md bg-accent px-4 py-2 text-sm font-bold text-accent-foreground shadow-[0_4px_16px_rgba(243,91,4,0.35)] transition-all hover:bg-accent-strong hover:shadow-[0_4px_20px_rgba(255,183,3,0.45)]"
+            className="ml-2 cursor-pointer rounded-md bg-accent px-4 py-2 text-sm font-bold text-accent-foreground transition-colors duration-300 hover:bg-accent/80"
           >
             Contact me
           </a>
@@ -67,7 +67,7 @@ export function SiteHeader() {
           aria-label="Mobile navigation"
           className="border-t border-border/60 bg-background md:hidden"
         >
-          <div className="mx-auto flex max-w-5xl flex-col gap-1 px-4 py-3 sm:px-6">
+          <div className="mx-auto flex max-w-7xl flex-col gap-1 px-4 py-3 sm:px-6">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.label}

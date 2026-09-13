@@ -31,7 +31,7 @@ export function SectionHeading({ accent, title, eyebrow, subtitle }: SectionHead
 
 export function Section({ children, id }: { children: ReactNode; id?: string }) {
   return (
-    <section id={id} className="mx-auto w-full max-w-5xl px-4 py-16 sm:px-6 sm:py-20">
+    <section id={id} className="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 sm:py-20">
       {children}
     </section>
   )
@@ -41,11 +41,11 @@ export function SeeMoreLink({ href, children }: { href: string; children: ReactN
   return (
     <a
       href={href}
-      className="group inline-flex items-center gap-1.5 text-sm font-bold text-accent-strong transition-colors hover:text-accent"
+      className="group inline-flex items-center gap-2 text-xl font-bold text-foreground transition-colors duration-300 hover:text-accent-strong md:text-2xl"
     >
       {children}
       <ArrowRight
-        className="h-4 w-4 transition-transform group-hover:translate-x-0.5"
+        className="h-5 w-5 transition-transform group-hover:translate-x-0.5"
         aria-hidden="true"
       />
     </a>

@@ -124,5 +124,5 @@ export const BLOG_POSTS: BlogPost[] = [
 ]
 
 export function blogPostUrl(slug: string) {
-  return `https://masb0ymas.com/blog/${slug}`
+  return `/blog/${slug}`
 }

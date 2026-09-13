@@ -33,7 +33,7 @@ export function SocialLinks() {
             title={link.label}
             target={link.href.startsWith('mailto:') ? undefined : '_blank'}
             rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-            className="inline-flex cursor-pointer text-muted-foreground transition-all hover:-translate-y-0.5 hover:text-accent-strong"
+            className="inline-flex cursor-pointer text-accent-strong/60 transition-colors hover:text-accent-strong"
           >
             <SocialIcon icon={link.icon} />
           </a>
