@@ -1,0 +1,39 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "masb0ymas-main-web",
+  "compatibility_date": "2026-09-13",
+  "main": "vinext/server/fetch-handler",
+  "assets": {
+    "directory": "dist/client",
+    "not_found_handling": "none",
+    "binding": "ASSETS",
+  },
+  "cache": {
+    "enabled": true,
+  },
+  "images": {
+    "binding": "IMAGES",
+  },
+  "observability": {
+    "enabled": true,
+  },
+  "upload_source_maps": true,
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "masb0ymas.com",
+      "zone_name": "masb0ymas.com",
+      "custom_domain": true,
+    },
+    {
+      "pattern": "masb0ymas.my.id",
+      "zone_name": "masb0ymas.my.id",
+      "custom_domain": true,
+    },
+  ],
+}
