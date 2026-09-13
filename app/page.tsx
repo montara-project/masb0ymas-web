@@ -1,5 +1,6 @@
 import { FeaturedPosts } from '@/components/sections/featured-posts'
 import { FeaturedProjects } from '@/components/sections/featured-projects'
+import { GithubActivity } from '@/components/sections/github-activity'
 import { Hero } from '@/components/sections/hero'
 import { HireCta } from '@/components/sections/hire-cta'
 import { OpenSource } from '@/components/sections/open-source'
@@ -38,6 +39,7 @@ export default function Home() {
       <FeaturedPosts />
       <FeaturedProjects />
       <OpenSource />
+      <GithubActivity />
       <HireCta />
     </div>
   )

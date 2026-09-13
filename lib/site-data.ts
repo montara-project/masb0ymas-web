@@ -74,6 +74,8 @@ export const FEATURED_POSTS = [
   {
     title: 'Bagaimana cara setup Git dan GitHub pada local device',
     href: 'https://masb0ymas.com/blog/bagaimana-cara-setup-git-dan-github-pada-local-device',
+    cover: '/blog/setup-git-github.png',
+    coverAlt: 'Illustration of Git and GitHub setup on a local device',
     date: '02 Des 2025',
     iso: '2025-12-02',
     excerpt:
@@ -83,31 +85,17 @@ export const FEATURED_POSTS = [
   {
     title: 'How to Use GitHub Actions for CI/CD and Push to Google Artifact Registry',
     href: 'https://masb0ymas.com/blog/how-to-use-github-action-for-ci-cd-and-push-to-google-artifact-registry',
+    cover: '/blog/ci-cd-github-actions.webp',
+    coverAlt: 'GitHub Actions workflow build success on Google Artifact Registry',
     date: '04 Nov 2024',
     iso: '2024-11-04',
     excerpt:
       'A guide to setting up a CI/CD workflow using GitHub Actions to automate the build and deployment process and push artifacts to Google Artifact Registry.',
     tags: ['Docker', 'CI/CD', 'GitHub Actions', 'Google Artifact Registry'],
   },
-  {
-    title: 'How to Install React Native on Different Platforms?',
-    href: 'https://masb0ymas.com/blog/how-to-install-react-native-on-different-platforms',
-    date: '02 Sep 2024',
-    iso: '2024-09-02',
-    excerpt:
-      'This guide provides a step-by-step tutorial on installing React Native across various platforms, including Windows, macOS, and Linux.',
-    tags: ['React Native', 'CLI'],
-  },
 ] as const
 
 export const FEATURED_PROJECTS = [
-  {
-    title: 'Web Programming Hack',
-    href: 'https://masb0ymas.com/project/web-programming-hack',
-    description:
-      'A bootcamp for web programming that also offers an opportunity to work abroad. Our intensive training program equips participants with essential coding skills, modern frameworks, and best practices for full-stack development.',
-    tags: ['Bootcamp', 'Web Programming'],
-  },
   {
     title: 'Seadev',
     href: 'https://masb0ymas.com/project/seadev',
@@ -129,6 +117,13 @@ export const FEATURED_PROJECTS = [
       'A comprehensive web application designed to help you take control of your financial life by tracking and managing your cash flow effectively, from income and expenses to budgets and savings goals.',
     tags: ['Cashflow', 'Income', 'Expense', 'Budgeting'],
   },
+  {
+    title: 'Web Programming Hack',
+    href: 'https://masb0ymas.com/project/web-programming-hack',
+    description:
+      'A bootcamp for web programming that also offers an opportunity to work abroad. Our intensive training program equips participants with essential coding skills, modern frameworks, and best practices for full-stack development.',
+    tags: ['Bootcamp', 'Web Programming'],
+  },
 ] as const
 
 export const OPEN_SOURCE_REPOS = [
@@ -139,6 +134,16 @@ export const OPEN_SOURCE_REPOS = [
   { repo: 'gintama' },
   { repo: 'audiopintar' },
 ] as const
+
+/** Palette-matched GitHub stat cards (self-hosted grs + public streak service). */
+export const GITHUB_STATS_CARD_URL =
+  'https://grs.masb0ymas.com/api/?username=masb0ymas&show_icons=true&hide_border=true' +
+  '&bg_color=191919&title_color=FFB703&text_color=FAFAFA&icon_color=FFB703&border_radius=10'
+
+export const GITHUB_STREAK_CARD_URL =
+  'https://streak-stats.demolab.com?user=masb0ymas&hide_border=true' +
+  '&background=191919&border=262628&ring=F35B04&fire=FFB703&currStreakNum=FAFAFA' +
+  '&sideNums=FAFAFA&currStreakLabel=FFB703&sideLabels=A2ADB6&dates=8ECAE6'
 
 export function repoUrl(repo: string) {
   return `https://github.com/masb0ymas/${repo}`
