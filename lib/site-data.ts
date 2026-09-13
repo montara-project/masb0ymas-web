@@ -25,8 +25,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const NAV_LINKS = [
   { label: 'Home', href: '/' },
-  { label: 'Blog', href: 'https://masb0ymas.com/blog' },
-  { label: 'Project', href: 'https://masb0ymas.com/project' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Project', href: '/project' },
   { label: 'About', href: 'https://masb0ymas.com/about' },
   { label: 'Contact', href: SITE.contactUrl },
 ] as const

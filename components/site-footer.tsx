@@ -10,13 +10,10 @@ export function SiteFooter() {
           Copyright © {new Date().getFullYear()} {SITE.name}. All rights reserved.
         </p>
         <nav aria-label="Legal" className="flex items-center gap-6">
-          <a
-            href="https://masb0ymas.com/privacy"
-            className="transition-colors hover:text-foreground"
-          >
+          <a href="/privacy" className="transition-colors hover:text-foreground">
             Privacy
           </a>
-          <a href="https://masb0ymas.com/terms" className="transition-colors hover:text-foreground">
+          <a href="/terms" className="transition-colors hover:text-foreground">
             Terms
           </a>
         </nav>

@@ -54,7 +54,7 @@ export function FeaturedProjects() {
       </div>
 
       <div className="mt-8">
-        <SeeMoreLink href="https://masb0ymas.com/project">See more projects</SeeMoreLink>
+        <SeeMoreLink href="/project">See more projects</SeeMoreLink>
       </div>
     </Section>
   )

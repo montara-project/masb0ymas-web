@@ -71,7 +71,7 @@ export function FeaturedPosts() {
       </div>
 
       <div className="mt-8">
-        <SeeMoreLink href="https://masb0ymas.com/blog">See more posts</SeeMoreLink>
+        <SeeMoreLink href="/blog">See more posts</SeeMoreLink>
       </div>
     </Section>
   )
