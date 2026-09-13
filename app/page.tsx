@@ -1,80 +1,44 @@
-const links = [
-  {
-    href: 'https://github.com/cloudflare/vinext',
-    label: 'vinext',
-  },
-  {
-    href: 'https://developers.cloudflare.com/workers/',
-    label: 'Workers',
-  },
-]
+import { FeaturedPosts } from '@/components/sections/featured-posts'
+import { FeaturedProjects } from '@/components/sections/featured-projects'
+import { Hero } from '@/components/sections/hero'
+import { HireCta } from '@/components/sections/hire-cta'
+import { OpenSource } from '@/components/sections/open-source'
+import { WhatIDo } from '@/components/sections/what-i-do'
 
 export const revalidate = 300
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-slate-50 px-6 py-10 text-slate-950">
-      <section className="mx-auto flex max-w-4xl flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">
-            vinext + Cloudflare Workers
-          </p>
-          <h1 className="max-w-2xl text-4xl font-semibold leading-tight sm:text-5xl">
-            Build Next.js-style apps with Vite and deploy them to the edge.
-          </h1>
-          <p className="max-w-2xl text-lg leading-8 text-slate-700">
-            This App Router project is wired for vinext, Tailwind CSS, and Cloudflare Workers.
-          </p>
-        </div>
+    <div className="relative overflow-hidden">
+      {/* Ambient background spanning hero → CTA: blueprint grid + glows along the scroll.
+          Ends before the footer, which lives outside this wrapper. */}
+      <div
+        aria-hidden="true"
+        className="bg-grid-faint pointer-events-none absolute inset-0 -z-10"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-[6%] right-[6%] -z-10 h-80 w-80 rounded-full bg-info/15 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-[30%] -left-16 -z-10 h-72 w-72 rounded-full bg-accent/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute top-[55%] right-[4%] -z-10 h-72 w-72 rounded-full bg-info/10 blur-3xl"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-[6%] left-[8%] -z-10 h-64 w-64 rounded-full bg-accent/10 blur-3xl"
+      />
 
-        <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-lg border border-slate-200 bg-white p-5">
-            <h2 className="font-semibold">Develop</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Run the vinext dev server locally.
-            </p>
-            <code className="mt-4 block rounded bg-slate-100 px-3 py-2 text-sm">pnpm run dev</code>
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-5">
-            <h2 className="font-semibold">Build</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Create Worker-ready production output.
-            </p>
-            <code className="mt-4 block rounded bg-slate-100 px-3 py-2 text-sm">
-              pnpm run build
-            </code>
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-5">
-            <h2 className="font-semibold">Deploy</h2>
-            <p className="mt-2 text-sm leading-6 text-slate-600">
-              Ship the generated Worker with Wrangler.
-            </p>
-            <code className="mt-4 block rounded bg-slate-100 px-3 py-2 text-sm">
-              pnpm run deploy
-            </code>
-          </div>
-        </div>
-
-        <nav className="flex flex-wrap gap-3">
-          {links.map((link) => (
-            <a
-              className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium hover:bg-slate-100"
-              href={link.href}
-              key={link.href}
-              rel="noreferrer"
-              target="_blank"
-            >
-              {link.label}
-            </a>
-          ))}
-          <a
-            className="rounded-md border border-slate-300 bg-white px-4 py-2 text-sm font-medium hover:bg-slate-100"
-            href="/api/hello"
-          >
-            API route
-          </a>
-        </nav>
-      </section>
-    </main>
+      <Hero />
+      <WhatIDo />
+      <FeaturedPosts />
+      <FeaturedProjects />
+      <OpenSource />
+      <HireCta />
+    </div>
   )
 }
