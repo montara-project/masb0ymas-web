@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { LegalContent } from '@/components/legal-content'
 import { PageHeader, PageShell } from '@/components/page-shell'
-import { PRIVACY_LAST_UPDATED, PRIVACY_SECTIONS } from '@/lib/legal'
+import { PRIVACY_LAST_UPDATED, PRIVACY_SECTIONS } from '@/lib/data/legal'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy - masb0ymas',

@@ -8,7 +8,7 @@ import {
   TagChip,
   cardClass,
 } from '@/components/section-parts'
-import { FEATURED_POSTS } from '@/lib/site-data'
+import { FEATURED_POSTS } from '@/lib/data/site-data'
 
 export function FeaturedPosts() {
   return (

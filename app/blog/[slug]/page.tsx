@@ -7,8 +7,8 @@ import { notFound } from 'next/navigation'
 
 import { PageShell } from '@/components/page-shell'
 import { TagChip } from '@/components/section-parts'
-import { BLOG_POSTS } from '@/lib/blog-data'
-import { BLOG_CONTENT } from '@/lib/content-registry'
+import { BLOG_POSTS } from '@/lib/data/blog-data'
+import { BLOG_CONTENT } from '@/lib/data/content-registry'
 
 export const revalidate = 300
 

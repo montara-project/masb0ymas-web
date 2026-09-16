@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { PageHeader, PageShell } from '@/components/page-shell'
 import { Reveal } from '@/components/reveal'
 import { TagChip, cardClass } from '@/components/section-parts'
-import { PROJECTS, projectUrl } from '@/lib/project-data'
+import { PROJECTS, projectUrl } from '@/lib/data/project-data'
 
 export const metadata: Metadata = {
   title: 'Projects - masb0ymas',

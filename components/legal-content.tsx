@@ -1,6 +1,6 @@
-import type { LegalBlock } from '@/lib/legal'
+import type { LegalBlock } from '@/lib/data/legal'
 
-import { SITE } from '@/lib/site-data'
+import { SITE } from '@/lib/data/site-data'
 
 function ContactLines() {
   return (
