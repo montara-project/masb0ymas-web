@@ -6,6 +6,7 @@ import './globals.css'
 
 import { SiteFooter } from '@/components/site-footer'
 import { SiteHeader } from '@/components/site-header'
+import { META } from '@/lib/constants/meta'
 
 const nunitoSans = Nunito_Sans({
   subsets: ['latin'],
@@ -14,26 +15,7 @@ const nunitoSans = Nunito_Sans({
   display: 'swap',
 })
 
-export const metadata: Metadata = {
-  title: 'masb0ymas - all about me and my journey including, personal, blog, projects, and more',
-  description:
-    'Explore my blog for in-depth articles, tutorials, and insights on technology, web development, AI, and Web3. Learn from my experiences as I share practical knowledge and solutions from my development journey.',
-  authors: [{ name: 'masb0ymas', url: 'https://masb0ymas.com' }],
-  keywords: ['Tech', 'Web', 'AI', 'Web3', 'masb0ymas'],
-  openGraph: {
-    title: 'masb0ymas - all about me and my journey including, personal, blog, projects, and more',
-    description:
-      'Explore my blog for in-depth articles, tutorials, and insights on technology, web development, AI, and Web3.',
-    url: 'https://masb0ymas.com',
-    siteName: 'masb0ymas',
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    creator: 'masb0ymas',
-  },
-}
+export const metadata: Metadata = META
 
 export const viewport: Viewport = {
   themeColor: '#0e0e0e',
@@ -42,6 +24,13 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          defer
+          src="https://analytics.masb0ymas.com/script.js"
+          data-website-id="75db1d28-d884-475c-9027-9b9d84b36ea6"
+        ></script>
+      </head>
       <body className={`flex min-h-screen flex-col ${nunitoSans.className}`}>
         <SiteHeader />
         <main className="flex-1">{children}</main>

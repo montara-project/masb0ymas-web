@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { LegalContent } from '@/components/legal-content'
 import { PageHeader, PageShell } from '@/components/page-shell'
-import { TERMS_LAST_UPDATED, TERMS_SECTIONS } from '@/lib/legal'
+import { TERMS_LAST_UPDATED, TERMS_SECTIONS } from '@/lib/data/legal'
 
 export const metadata: Metadata = {
   title: 'Terms of Service - masb0ymas',

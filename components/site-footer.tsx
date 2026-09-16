@@ -1,6 +1,6 @@
 'use client'
 
-import { SITE } from '@/lib/site-data'
+import { SITE } from '@/lib/data/site-data'
 
 export function SiteFooter() {
   return (

@@ -3,8 +3,8 @@ import type { Metadata } from 'next'
 import { PageHeader, PageShell } from '@/components/page-shell'
 import { Reveal } from '@/components/reveal'
 import { SectionHeading, cardClass } from '@/components/section-parts'
-import { EDUCATION, EXPERIENCE } from '@/lib/about-data'
-import { SITE } from '@/lib/site-data'
+import { EDUCATION, EXPERIENCE } from '@/lib/data/about-data'
+import { SITE } from '@/lib/data/site-data'
 
 export const metadata: Metadata = {
   title: 'About - masb0ymas',

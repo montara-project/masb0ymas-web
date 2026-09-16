@@ -2,7 +2,7 @@ import { Sparkles } from 'lucide-react'
 
 import { Reveal } from '@/components/reveal'
 import { Section } from '@/components/section-parts'
-import { SITE } from '@/lib/site-data'
+import { SITE } from '@/lib/data/site-data'
 
 export function HireCta() {
   return (

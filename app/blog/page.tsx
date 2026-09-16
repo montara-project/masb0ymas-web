@@ -5,7 +5,7 @@ import Image from 'next/image'
 import { PageHeader, PageShell } from '@/components/page-shell'
 import { Reveal } from '@/components/reveal'
 import { TagChip, cardClass } from '@/components/section-parts'
-import { BLOG_POSTS, blogPostUrl } from '@/lib/blog-data'
+import { BLOG_POSTS, blogPostUrl } from '@/lib/data/blog-data'
 
 export const metadata: Metadata = {
   title: 'Blog - masb0ymas',

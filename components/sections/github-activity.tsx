@@ -1,7 +1,7 @@
 import { ContributionHeatmap } from '@/components/contribution-heatmap'
 import { Reveal } from '@/components/reveal'
 import { Section, SectionHeading, cardClass } from '@/components/section-parts'
-import { GITHUB_STREAK_CARD_URL, GITHUB_STATS_CARD_URL } from '@/lib/site-data'
+import { GITHUB_STATS_CARD_URL, GITHUB_STREAK_CARD_URL } from '@/lib/data/site-data'
 
 export function GithubActivity() {
   return (

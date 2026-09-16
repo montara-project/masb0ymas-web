@@ -3,7 +3,7 @@
 import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 
-import { NAV_LINKS, SITE } from '@/lib/site-data'
+import { NAV_LINKS, SITE } from '@/lib/data/site-data'
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)

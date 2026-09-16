@@ -10,7 +10,7 @@ import {
   TagChip,
   cardClass,
 } from '@/components/section-parts'
-import { FEATURED_PROJECTS } from '@/lib/site-data'
+import { FEATURED_PROJECTS } from '@/lib/data/site-data'
 
 export function FeaturedProjects() {
   return (

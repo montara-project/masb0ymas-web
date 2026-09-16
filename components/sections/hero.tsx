@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { Reveal } from '@/components/reveal'
 import { SocialLinks } from '@/components/social-links'
-import { SITE } from '@/lib/site-data'
+import { SITE } from '@/lib/data/site-data'
 
 export function Hero() {
   return (

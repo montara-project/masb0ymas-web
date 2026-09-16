@@ -2,7 +2,7 @@
 
 import { Reveal } from '@/components/reveal'
 import { Section, SectionHeading, SeeMoreLink } from '@/components/section-parts'
-import { OPEN_SOURCE_REPOS, repoCardImage, repoUrl } from '@/lib/site-data'
+import { OPEN_SOURCE_REPOS, repoCardImage, repoUrl } from '@/lib/data/site-data'
 
 export function OpenSource() {
   return (

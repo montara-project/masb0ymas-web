@@ -6,7 +6,7 @@ import { CodeXml, Layers, PlugZap, Rocket, ServerCog, Users } from 'lucide-react
 
 import { Reveal } from '@/components/reveal'
 import { Section, SectionHeading, cardClass } from '@/components/section-parts'
-import { SERVICES } from '@/lib/site-data'
+import { SERVICES } from '@/lib/data/site-data'
 
 const SERVICE_ICONS: Record<string, ComponentType<{ className?: string }>> = {
   frontend: CodeXml,

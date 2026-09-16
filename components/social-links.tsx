@@ -3,7 +3,7 @@
 import { FileText, Mail } from 'lucide-react'
 
 import { BlueskyIcon, GitHubIcon, LinkedInIcon, XIcon } from '@/components/icons'
-import { SOCIAL_LINKS, type SocialLink } from '@/lib/site-data'
+import { SOCIAL_LINKS, type SocialLink } from '@/lib/data/site-data'
 
 function SocialIcon({ icon }: { icon: SocialLink['icon'] }) {
   switch (icon) {
