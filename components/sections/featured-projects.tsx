@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowUpRight } from 'lucide-react'
+import Link from "next/link";
 
 import { Reveal } from '@/components/reveal'
 import {
@@ -26,7 +27,7 @@ export function FeaturedProjects() {
         {FEATURED_PROJECTS.map((project, index) => (
           <Reveal key={project.title} delay={index * 60} className="h-full">
             <article className={`${cardClass} flex h-full flex-col`}>
-              <a href={project.href} className="group flex h-full flex-col p-6">
+              <Link href={project.href} className="group cursor-newtab flex h-full flex-col p-6">
                 <h3 className="inline-flex items-center gap-1.5 text-lg font-bold transition-colors group-hover:text-accent-strong">
                   {project.title}
                   <ArrowUpRight
@@ -42,7 +43,7 @@ export function FeaturedProjects() {
                     <TagChip key={tag}>{tag}</TagChip>
                   ))}
                 </span>
-              </a>
+              </Link>
             </article>
           </Reveal>
         ))}

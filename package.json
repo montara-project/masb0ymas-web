@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "@t3-oss/env-nextjs": "^0.13.11",
+    "@tabler/icons-react": "^3.46.0",
     "@tailwindcss/typography": "^0.5.20",
     "@vinext/cloudflare": "1.0.0-beta.7",
     "class-variance-authority": "^0.7.1",

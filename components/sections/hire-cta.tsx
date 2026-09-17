@@ -1,8 +1,9 @@
-import { Sparkles } from 'lucide-react'
+import { Sparkles } from "lucide-react";
+import Link from "next/link";
 
-import { Reveal } from '@/components/reveal'
-import { Section } from '@/components/section-parts'
-import { SITE } from '@/lib/data/site-data'
+import { Reveal } from "@/components/reveal";
+import { Section } from "@/components/section-parts";
+import { SITE } from "@/lib/data/site-data";
 
 export function HireCta() {
   return (
@@ -30,27 +31,28 @@ export function HireCta() {
               Boost Your Team with Expert Developers
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-base text-muted-foreground">
-              Do you need additional developers as full-time/part-time/freelance workers?
+              Do you need additional developers as full-time/part-time/freelance
+              workers?
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-              <a
+              <Link
                 href={`mailto:${SITE.email}`}
                 className="inline-flex cursor-pointer items-center gap-2 rounded-md bg-accent px-6 py-3 text-sm font-bold text-accent-foreground transition-colors duration-300 hover:bg-accent/80"
               >
                 Contact me
-              </a>
-              <a
+              </Link>
+              <Link
                 href={SITE.contactUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex cursor-pointer items-center gap-2 rounded-md border border-border-strong bg-background/40 px-6 py-3 text-sm font-bold text-foreground transition-colors duration-300 hover:bg-accent/50"
               >
                 Other channels
-              </a>
+              </Link>
             </div>
           </div>
         </div>
       </Reveal>
     </Section>
-  )
+  );
 }

@@ -1,32 +1,34 @@
-import type { LegalBlock } from '@/lib/data/legal'
+import Link from "next/link";
 
-import { SITE } from '@/lib/data/site-data'
+import type { LegalBlock } from "@/lib/data/legal";
+
+import { SITE } from "@/lib/data/site-data";
 
 function ContactLines() {
   return (
     <ul className="mt-3 space-y-1.5">
       <li>
-        Email:{' '}
-        <a
+        Email:{" "}
+        <Link
           href={`mailto:${SITE.email}`}
           className="font-semibold text-accent-strong transition-colors hover:text-accent"
         >
           {SITE.email}
-        </a>
+        </Link>
       </li>
       <li>
-        Website:{' '}
-        <a
+        Website:{" "}
+        <Link
           href={SITE.url}
           target="_blank"
           rel="noopener noreferrer"
           className="font-semibold text-accent-strong transition-colors hover:text-accent"
         >
           masb0ymas.com
-        </a>
+        </Link>
       </li>
     </ul>
-  )
+  );
 }
 
 function BlockBody({ block }: { block: LegalBlock }) {
@@ -52,7 +54,7 @@ function BlockBody({ block }: { block: LegalBlock }) {
         <p className="mt-3 leading-7 text-muted-foreground">{block.trailing}</p>
       ) : null}
     </>
-  )
+  );
 }
 
 /** Renders structured legal content (privacy policy / terms of service). */
@@ -75,5 +77,5 @@ export function LegalContent({ sections }: { sections: LegalBlock[] }) {
         </section>
       ))}
     </div>
-  )
+  );
 }

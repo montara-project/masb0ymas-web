@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import Image from 'next/image'
+import Link from "next/link";
 
 import { PageHeader, PageShell } from '@/components/page-shell'
 import { Reveal } from '@/components/reveal'
@@ -29,7 +30,7 @@ export default function BlogPage() {
         {BLOG_POSTS.map((post, index) => (
           <Reveal key={post.slug} delay={Math.min(index, 4) * 40}>
             <article className={`${cardClass} flex flex-col overflow-hidden sm:flex-row`}>
-              <a
+              <Link
                 href={blogPostUrl(post.slug)}
                 aria-label={post.title}
                 className="relative block aspect-[16/9] overflow-hidden border-b border-border sm:aspect-auto sm:w-56 sm:shrink-0 sm:border-b-0 sm:border-r"
@@ -41,7 +42,7 @@ export default function BlogPage() {
                   sizes="(min-width: 640px) 224px, 100vw"
                   className="object-cover transition-transform duration-500 hover:scale-105"
                 />
-              </a>
+              </Link>
               <div className="flex flex-1 flex-col p-6">
                 <time
                   dateTime={post.iso}
@@ -50,12 +51,12 @@ export default function BlogPage() {
                   {post.date}
                 </time>
                 <h2 className="mt-2 text-lg font-bold leading-snug">
-                  <a
+                  <Link
                     href={blogPostUrl(post.slug)}
                     className="transition-colors hover:text-accent-strong"
                   >
                     {post.title}
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mt-2 line-clamp-2 text-sm leading-6 text-muted-foreground">
                   {post.excerpt}
