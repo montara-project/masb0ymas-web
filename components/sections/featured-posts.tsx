@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from "next/link";
 
 import { Reveal } from '@/components/reveal'
 import {
@@ -24,7 +25,7 @@ export function FeaturedPosts() {
         {FEATURED_POSTS.map((post, index) => (
           <Reveal key={post.title} delay={index * 60} className="h-full">
             <article className={`${cardClass} flex h-full flex-col overflow-hidden`}>
-              <a href={post.href} className="group flex h-full flex-col">
+              <Link href={post.href} className="group flex h-full flex-col cursor-newtab">
                 <span className="relative block aspect-video overflow-hidden border-b border-border">
                   <Image
                     src={post.cover}
@@ -53,7 +54,7 @@ export function FeaturedPosts() {
                     ))}
                   </span>
                 </span>
-              </a>
+              </Link>
             </article>
           </Reveal>
         ))}

@@ -27,14 +27,10 @@ export function PageHeader({ eyebrow, children, subtitle }: PageHeaderProps) {
   )
 }
 
-/** Wraps a page: ambient background (grid + glows) + centered container. */
+/** Wraps a page: ambient background (glows) + centered container. */
 export function PageShell({ children }: { children: ReactNode }) {
   return (
     <div className="relative overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="bg-grid-faint pointer-events-none absolute inset-0 -z-10"
-      />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute top-[6%] right-[6%] -z-10 h-80 w-80 rounded-full bg-info/15 blur-3xl"

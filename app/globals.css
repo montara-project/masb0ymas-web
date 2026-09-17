@@ -114,15 +114,6 @@ a {
   color: transparent;
 }
 
-/* Faint blueprint grid spanning the page, fading out towards the footer */
-@utility bg-grid-faint {
-  background-image:
-    linear-gradient(rgba(142, 202, 230, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(142, 202, 230, 0.04) 1px, transparent 1px);
-  background-size: 44px 44px;
-  mask-image: linear-gradient(to bottom, black 55%, transparent 97%);
-}
-
 /* Scroll-reveal (driven by <Reveal/>) */
 .reveal {
   opacity: 0;
@@ -282,4 +273,10 @@ a {
   background-color: var(--muted);
   color: var(--foreground);
   font-weight: 700;
+}
+
+.cursor-newtab {
+  cursor:
+    url(/static/images/new-tab.png) 10 10,
+    pointer;
 }

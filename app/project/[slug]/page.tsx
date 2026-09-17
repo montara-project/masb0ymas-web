@@ -73,7 +73,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
         </div>
 
         <div className="mt-14 border-t border-border pt-8">
-          <a
+          <Link
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -84,7 +84,7 @@ export default async function ProjectDetailPage({ params }: { params: Promise<{ 
               className="h-4 w-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
               aria-hidden="true"
             />
-          </a>
+          </Link>
         </div>
       </article>
     </PageShell>

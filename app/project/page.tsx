@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from "next/link";
 
 import { PageHeader, PageShell } from '@/components/page-shell'
 import { Reveal } from '@/components/reveal'
@@ -30,7 +31,7 @@ export default function ProjectPage() {
         {PROJECTS.map((project, index) => (
           <Reveal key={project.slug} delay={Math.min(index, 4) * 60} className="h-full">
             <article className={`${cardClass} flex h-full flex-col overflow-hidden`}>
-              <a
+              <Link
                 href={projectUrl(project.slug)}
                 aria-label={project.title}
                 className="relative block aspect-video overflow-hidden border-b border-border"
@@ -42,10 +43,10 @@ export default function ProjectPage() {
                   sizes="(min-width: 640px) 480px, 100vw"
                   className="object-cover transition-transform duration-500 hover:scale-105"
                 />
-              </a>
+              </Link>
               <div className="flex flex-1 flex-col p-6">
                 <h2 className="text-lg font-bold">
-                  <a
+                  <Link
                     href={projectUrl(project.slug)}
                     className="group inline-flex items-center gap-1.5 transition-colors hover:text-accent-strong"
                   >
@@ -54,7 +55,7 @@ export default function ProjectPage() {
                       className="h-4 w-4 text-muted-foreground transition-all group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-accent-strong"
                       aria-hidden="true"
                     />
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mt-3 line-clamp-4 text-sm leading-6 text-muted-foreground">
                   {project.description}
