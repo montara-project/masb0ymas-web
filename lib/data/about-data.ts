@@ -39,13 +39,14 @@ export const EXPERIENCE: Experience[] = [
   {
     company: 'PT Voyago Digital Indonesia',
     role: 'Frontend Developer',
-    type: 'Full-time',
+    type: 'Part-time',
     location: 'Jakarta, Indonesia',
     description:
       'During my time as a Frontend Developer at Voyago Tour & Travel, I delivered several key contributions supporting the company’s digital presence and business operations.',
     stats: [
       { label: 'Duration', value: 'Apr 2026 - Present' },
       { label: 'Projects', value: '1 Delivered' },
+      { label: 'Stack', value: 'React · NextJs' },
     ],
     contributions: [
       'Built and delivered a functional tour and travel website to support the company’s digital presence and business operations.',
@@ -79,6 +80,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: 'Duration', value: 'Jan 2025 - Feb 2026' },
       { label: 'Projects', value: '1 Built' },
+      { label: 'Stack', value: 'React · NextJs · Go' },
     ],
     contributions: [
       'Built an AI-driven analytics platform from the ground up using Golang, PostgreSQL, and Next.js, enabling users to query data using natural language.',
@@ -100,6 +102,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: 'Duration', value: 'Nov 2024 - Oct 2025' },
       { label: 'Focus', value: 'UI/UX · Frontend' },
+      { label: 'Stack', value: 'React · NextJs' },
     ],
     achievements: [
       'Improved the platform’s UI/UX and added new pages, increasing customer navigation efficiency and reducing user friction across the site.',
@@ -117,6 +120,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: 'Duration', value: 'Apr 2025 - Jul 2025' },
       { label: 'Platform', value: 'iOS' },
+      { label: 'Stack', value: 'React Native · Styled Component' },
     ],
     achievements: [
       'Delivered key features for the iOS app, including daily check-ins and improved onboarding flows, enhancing user engagement and retention.',
@@ -134,6 +138,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: 'Duration', value: 'Aug 2022 - Oct 2024' },
       { label: 'Scale', value: '100K+ Records' },
+      { label: 'Stack', value: 'React · Node' },
     ],
     achievements: [
       'Rebuilt an unmaintainable legacy insurance broker system into a modern, stable platform that improved operational efficiency for brokers.',
@@ -152,6 +157,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: 'Duration', value: 'Apr 2021 - Nov 2023' },
       { label: 'Focus', value: 'Ticketing & Payments' },
+      { label: 'Stack', value: 'React · Node' },
     ],
     achievements: [
       'Built and maintained ticketing platform features using Node.js + Next.js, improving purchase flow and reliability during high-traffic match days.',
@@ -170,6 +176,7 @@ export const EXPERIENCE: Experience[] = [
     stats: [
       { label: 'Duration', value: 'Jun 2019 - Apr 2021' },
       { label: 'Clients', value: 'Gov & Private' },
+      { label: 'Stack', value: 'React · Node' },
     ],
     achievements: [
       'Delivered multiple government and private-sector projects end-to-end, consistently meeting client deadlines and requirements.',
