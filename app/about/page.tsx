@@ -111,7 +111,9 @@ export default function AboutPage() {
                   </div>
 
                   <div className="mt-5 space-y-4 border-t border-border pt-5">
-                    <BulletList items={job.contributions} tone="accent" label="Contributions" />
+                    {job.contributions ? (
+                      <BulletList items={job.contributions} tone="accent" label="Contributions" />
+                    ) : null}
                     {job.achievements ? (
                       <BulletList items={job.achievements} tone="info" label="Achievements" />
                     ) : null}
