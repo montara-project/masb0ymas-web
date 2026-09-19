@@ -1,9 +1,9 @@
-import { Sparkles } from "lucide-react";
-import Link from "next/link";
+import { Sparkles } from 'lucide-react'
+import Link from 'next/link'
 
-import { Reveal } from "@/components/reveal";
-import { Section } from "@/components/section-parts";
-import { SITE } from "@/lib/data/site-data";
+import { Reveal } from '@/components/reveal'
+import { Section } from '@/components/section-parts'
+import { SITE } from '@/lib/data/site-data'
 
 export function HireCta() {
   return (
@@ -31,8 +31,7 @@ export function HireCta() {
               Boost Your Team with Expert Developers
             </h2>
             <p className="mx-auto mt-3 max-w-xl text-base text-muted-foreground">
-              Do you need additional developers as full-time/part-time/freelance
-              workers?
+              Do you need additional developers as full-time/part-time/freelance workers?
             </p>
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <Link
@@ -54,5 +53,5 @@ export function HireCta() {
         </div>
       </Reveal>
     </Section>
-  );
+  )
 }

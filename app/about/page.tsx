@@ -1,10 +1,10 @@
-import type { Metadata } from 'next'
+import type { Metadata } from 'next';
 
-import { PageHeader, PageShell } from '@/components/page-shell'
-import { Reveal } from '@/components/reveal'
-import { SectionHeading, cardClass } from '@/components/section-parts'
-import { EDUCATION, EXPERIENCE } from '@/lib/data/about-data'
-import { SITE } from '@/lib/data/site-data'
+import { PageShell } from "@/components/page-shell";
+import { Reveal } from "@/components/reveal";
+import { SectionHeading, cardClass } from "@/components/section-parts";
+import { Hero } from "@/components/sections/hero";
+import { EDUCATION, EXPERIENCE } from "@/lib/data/about-data";
 
 export const metadata: Metadata = {
   title: 'About - masb0ymas',
@@ -51,29 +51,7 @@ function BulletList({
 export default function AboutPage() {
   return (
     <PageShell>
-      <PageHeader
-        eyebrow="About"
-        subtitle="The journey, the work, and the learning behind the code."
-      >
-        Hi, I&apos;m <span className="text-gradient">{SITE.author}</span>, a Software Engineer.
-      </PageHeader>
-
-      <Reveal>
-        <div className="-mt-6 max-w-3xl space-y-4 text-base leading-7 text-muted-foreground sm:text-lg sm:leading-8">
-          <p>
-            My software engineering journey, which began in 2017, has provided me with a strong
-            understanding of software development lifecycle and principles. I&apos;ve actively
-            pursued opportunities to expand my skill set, including developing junior-level
-            expertise in web3.
-          </p>
-          <p>
-            I excel at tackling complex problems, fostering collaborative team dynamics, and
-            navigating project challenges with a solution-oriented mindset. My capacity to quickly
-            adapt to new technologies and manage stressful situations has consistently proven
-            valuable.
-          </p>
-        </div>
-      </Reveal>
+      <Hero />
 
       <section id="experience" className="mt-20">
         <SectionHeading
@@ -88,7 +66,7 @@ export default function AboutPage() {
             <li key={job.company} className="relative">
               <span
                 aria-hidden="true"
-                className="absolute top-1.5 -left-[37px] h-2.5 w-2.5 rounded-full bg-accent ring-4 ring-accent/15"
+                className="absolute top-1.5 -left-9.25 h-2.5 w-2.5 rounded-full bg-accent ring-4 ring-accent/15"
               />
               <Reveal delay={Math.min(index, 4) * 50}>
                 <div className={`${cardClass} p-6`}>

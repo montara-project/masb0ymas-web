@@ -1,6 +1,6 @@
 'use client'
 
-import Link from "next/link";
+import Link from 'next/link'
 
 import { Reveal } from '@/components/reveal'
 import { Section, SectionHeading, SeeMoreLink } from '@/components/section-parts'
