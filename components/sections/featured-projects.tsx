@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowUpRight } from 'lucide-react'
-import Link from "next/link";
+import Link from 'next/link'
 
 import { Reveal } from '@/components/reveal'
 import {

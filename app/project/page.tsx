@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 import { ArrowUpRight } from 'lucide-react'
 import Image from 'next/image'
-import Link from "next/link";
+import Link from 'next/link'
 
 import { PageHeader, PageShell } from '@/components/page-shell'
 import { Reveal } from '@/components/reveal'
