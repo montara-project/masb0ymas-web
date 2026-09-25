@@ -99,6 +99,8 @@ export const FEATURED_PROJECTS = [
   {
     title: 'Seadev',
     href: '/project/seadev',
+    cover: '/project/seadev.webp',
+    coverAlt: 'Seadev project cover',
     description:
       'Cost-effective engineering talent to help your startup thrive. Skilled developers provide high-quality, affordable technical solutions tailored to emerging businesses.',
     tags: ['Engineering', 'Talent', 'Startup'],
@@ -106,6 +108,8 @@ export const FEATURED_PROJECTS = [
   {
     title: 'Boatwork',
     href: '/project/boatwork',
+    cover: '/project/boatwork.webp',
+    coverAlt: 'Boatwork project cover',
     description:
       'Professional boat and yacht services specializing in comprehensive repairs, state-of-the-art audio system enhancements, custom modifications, and routine maintenance.',
     tags: ['Yacht', 'Boat', 'Audio'],
@@ -113,6 +117,8 @@ export const FEATURED_PROJECTS = [
   {
     title: 'Moneyflow ID',
     href: '/project/moneyflow-id',
+    cover: '/project/moneyflow-id.webp',
+    coverAlt: 'Moneyflow ID project cover',
     description:
       'A comprehensive web application designed to help you take control of your financial life by tracking and managing your cash flow effectively, from income and expenses to budgets and savings goals.',
     tags: ['Cashflow', 'Income', 'Expense', 'Budgeting'],
@@ -120,6 +126,8 @@ export const FEATURED_PROJECTS = [
   {
     title: 'Web Programming Hack',
     href: '/project/web-programming-hack',
+    cover: '/project/web-programming-hack.webp',
+    coverAlt: 'Web Programming Hack project cover',
     description:
       'A bootcamp for web programming that also offers an opportunity to work abroad. Our intensive training program equips participants with essential coding skills, modern frameworks, and best practices for full-stack development.',
     tags: ['Bootcamp', 'Web Programming'],

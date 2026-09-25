@@ -5,7 +5,7 @@ import type { ComponentType } from 'react'
 import { CodeXml, Layers, PlugZap, Rocket, ServerCog, Users } from 'lucide-react'
 
 import { Reveal } from '@/components/reveal'
-import { Section, SectionHeading, cardClass } from '@/components/section-parts'
+import { Section, SectionHeading } from '@/components/section-parts'
 import { SERVICES } from '@/lib/data/site-data'
 
 const SERVICE_ICONS: Record<string, ComponentType<{ className?: string }>> = {
@@ -27,19 +27,30 @@ export function WhatIDo() {
         subtitle="Delivering high-quality web solutions with modern technologies and best practices"
       />
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-10 grid gap-x-12 sm:grid-cols-2">
         {SERVICES.map((service, index) => {
           const Icon = SERVICE_ICONS[service.icon]
           return (
-            <Reveal key={service.title} delay={index * 60} className="h-full">
-              <div className={`${cardClass} group h-full p-6`}>
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-lg bg-info/15 text-info-soft transition-colors duration-300 group-hover:bg-accent group-hover:text-accent-foreground">
-                  <Icon className="h-5 w-5" aria-hidden="true" />
+            <Reveal key={service.title} delay={index * 50}>
+              <div className="group flex gap-5 border-t border-border py-7 transition-colors duration-300 hover:border-accent-strong/50 sm:py-8">
+                <span
+                  aria-hidden="true"
+                  className="font-mono text-sm font-semibold text-muted-foreground/60 tabular-nums transition-colors duration-300 group-hover:text-accent-strong"
+                >
+                  {String(index + 1).padStart(2, '0')}
+                </span>
+                <div>
+                  <h3 className="flex items-center gap-2.5 text-lg font-bold tracking-tight">
+                    {service.title}
+                    <Icon
+                      className="h-4 w-4 text-muted-foreground/60 transition-colors duration-300 group-hover:text-accent-strong"
+                      aria-hidden="true"
+                    />
+                  </h3>
+                  <p className="mt-2 text-pretty text-sm leading-6 text-muted-foreground">
+                    {service.description}
+                  </p>
                 </div>
-                <h3 className="mt-4 text-lg font-bold">{service.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-muted-foreground">
-                  {service.description}
-                </p>
               </div>
             </Reveal>
           )
