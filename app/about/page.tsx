@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+import type { Metadata } from 'next'
 
-import { PageShell } from "@/components/page-shell";
-import { Reveal } from "@/components/reveal";
-import { SectionHeading, cardClass } from "@/components/section-parts";
-import { Hero } from "@/components/sections/hero";
-import { EDUCATION, EXPERIENCE } from "@/lib/data/about-data";
+import { PageShell } from '@/components/page-shell'
+import { Reveal } from '@/components/reveal'
+import { SectionHeading, cardClass } from '@/components/section-parts'
+import { Hero } from '@/components/sections/hero'
+import { EDUCATION, EXPERIENCE } from '@/lib/data/about-data'
 
 export const metadata: Metadata = {
   title: 'About - masb0ymas',

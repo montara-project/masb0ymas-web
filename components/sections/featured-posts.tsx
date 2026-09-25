@@ -45,7 +45,7 @@ export function FeaturedPosts() {
                   <h3 className="mt-3 text-lg font-bold leading-snug transition-colors group-hover:text-accent-strong">
                     {post.title}
                   </h3>
-                  <p className="mt-3 line-clamp-3 text-sm leading-6 text-muted-foreground">
+                  <p className="mt-3 line-clamp-3 text-pretty text-sm leading-6 text-muted-foreground">
                     {post.excerpt}
                   </p>
                   <span className="mt-auto flex flex-wrap gap-2 pt-4">

@@ -22,10 +22,12 @@ export function SectionHeading({ accent, title, eyebrow, subtitle }: SectionHead
         <span className="h-px w-8 bg-gradient-to-r from-info to-transparent" />
         {eyebrow ?? title}
       </span>
-      <h2 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
+      <h2 className="text-2xl font-extrabold tracking-tight text-balance sm:text-3xl">
         <span className="text-gradient">{accent}</span> {title}
       </h2>
-      {subtitle ? <p className="text-base text-muted-foreground">{subtitle}</p> : null}
+      {subtitle ? (
+        <p className="max-w-2xl text-pretty text-base text-muted-foreground">{subtitle}</p>
+      ) : null}
     </div>
   )
 }
